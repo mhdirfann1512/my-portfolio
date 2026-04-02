@@ -2,6 +2,14 @@ import ProjectCard from "./components/ProjectCard";
 import { projects, type Project } from "./data/projects";
 
 function App() {
+  // Configuration: Update your manual stats here
+  const GITHUB_USERNAME = "mhdirfann1512";
+  const STATS = {
+    projects: projects.length, // Automatically stays in sync with your data
+    commits: "100+",           // Manual update
+    certs: "1"               // Manual update
+  };
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -64,10 +72,28 @@ function App() {
               <a href="/your-resume.pdf" target="_blank" style={{ padding: '14px 28px', background: '#0984e3', color: '#fff', textDecoration: 'none', borderRadius: '50px', fontWeight: 700, boxShadow: '0 10px 25px rgba(9, 132, 227, 0.3)' }}>📄 Download Resume</a>
             </div>
 
-            {/* Social Proof */}
-            <div style={{ display: 'flex', gap: '20px', alignItems: 'center', borderTop: '1px solid #e2e8f0', paddingTop: '25px' }}>
-              <a href="https://github.com/yourusername" target="_blank" style={{ textDecoration: 'none', color: '#1e293b', fontWeight: 600 }}>GitHub ↗</a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" style={{ textDecoration: 'none', color: '#0077b5', fontWeight: 600 }}>LinkedIn ↗</a>
+            {/* Social Links & Stats Stack */}
+            <div style={{ borderTop: '1px solid #e2e8f0', paddingTop: '25px' }}>
+              <div style={{ display: 'flex', gap: '20px', alignItems: 'center', marginBottom: '25px' }}>
+                <a href={`https://github.com/${GITHUB_USERNAME}`} target="_blank" style={{ textDecoration: 'none', color: '#1e293b', fontWeight: 600 }}>GitHub ↗</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" style={{ textDecoration: 'none', color: '#0077b5', fontWeight: 600 }}>LinkedIn ↗</a>
+              </div>
+
+              {/* Impact Stats Inline */}
+              <div style={{ display: 'flex', gap: '40px', flexWrap: 'wrap' }}>
+                <div>
+                  <div style={{ fontSize: '2rem', fontWeight: 800, color: '#0984e3' }}>{STATS.projects}</div>
+                  <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Projects</div>
+                </div>
+                <div>
+                  <div style={{ fontSize: '2rem', fontWeight: 800, color: '#0984e3' }}>{STATS.commits}</div>
+                  <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Commits</div>
+                </div>
+                <div>
+                  <div style={{ fontSize: '2rem', fontWeight: 800, color: '#0984e3' }}>{STATS.certs}</div>
+                  <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Certs</div>
+                </div>
+              </div>
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
