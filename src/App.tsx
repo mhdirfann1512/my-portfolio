@@ -123,8 +123,8 @@ function App() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px' }}>
             {[
               { title: 'Frontend', logos: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'HTML5', 'CSS', 'JavaScript'] },
-              { title: 'Backend', logos: ['Node.js', 'Laravel', 'PHP', 'Spring Boot', 'PostgreSQL', 'MySQL', 'Firebase'] },
-              { title: 'Tools', logos: ['Git', 'Postman', 'Vercel'] }
+              { title: 'Backend', logos: ['Node.js', 'Laravel', 'PHP', 'Spring Boot', 'Java', 'PostgreSQL', 'MySQL', 'Firebase'] },
+              { title: 'Tools', logos: ['Git', 'Postman', 'Vercel', 'AWS', 'Google Cloud'] }
             ].map((category, i) => (
               <div key={i} style={{ background: 'rgba(255,255,255,0.03)', padding: '40px', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}>
                 <h4 style={{ color: '#38bdf8', marginBottom: '24px', fontSize: '1.25rem', fontWeight: 700 }}>{category.title}</h4>
@@ -152,8 +152,14 @@ function App() {
             <SectionHeader title="Featured Work" subtitle="Portfolio" color="#38bdf8" />
             <a href={`https://github.com/${GITHUB_USERNAME}`} target="_blank" style={{ color: '#38bdf8', fontWeight: 700, textDecoration: 'none', marginBottom: '55px' }}>View GitHub →</a>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '32px' }}>
-            {projects.map((item: Project) => <ProjectCard key={item.id} project={item} />)}
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', // Slightly wider cards for better images
+            gap: '32px' 
+          }}>
+            {projects.map((item: Project) => (
+              <ProjectCard key={item.id} project={item} />
+            ))}
           </div>
         </div>
       </section>
