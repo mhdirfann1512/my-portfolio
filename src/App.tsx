@@ -72,7 +72,7 @@ function App() {
             Irfan<span style={{color: '#64748b'}}>.dev</span>
           </b>
           <div style={{ display: 'flex', gap: '8px' }}>
-            {['Skills', 'Education', 'Projects', 'Experience'].map(item => (
+            {['Skills', 'Projects', 'Experience', 'Education'].map(item => (
               <button key={item} onClick={() => scrollToSection(item.toLowerCase())} 
                 style={{ background: 'none', border: 'none', fontWeight: 600, color: '#475569', cursor: 'pointer', fontSize: '0.85rem', padding: '8px 16px', borderRadius: '12px', transition: 'all 0.2s' }}
                 onMouseOver={(e) => { e.currentTarget.style.backgroundColor = '#f1f5f9'; e.currentTarget.style.color = '#0984e3'; }}
@@ -85,7 +85,7 @@ function App() {
         </div>
       </nav>
 
-      {/* 1. HERO SECTION */}
+      {/* HERO SECTION */}
       <header style={getSectionStyle(0)}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '40px', alignItems: 'center', width: '100%' }}>
           <div>
@@ -116,15 +116,15 @@ function App() {
         </div>
       </header>
 
-      {/* 2. SKILLS */}
+      {/* SKILLS */}
       <section id="skills" style={getSectionStyle(1)}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
           <SectionHeader title="Technical Arsenal" subtitle="Expertise" color="#38bdf8" />
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px' }}>
             {[
-              { title: 'Frontend & Mobile', logos: ['React', 'TypeScript', 'Next.js', 'Flutter', 'Tailwind CSS', 'Kotlin'] },
-              { title: 'Backend & APIs', logos: ['Node.js', 'Laravel', 'PHP', 'Spring Boot', 'PostgreSQL', 'MySQL'] },
-              { title: 'Cloud & Infrastructure', logos: ['AWS', 'Firebase', 'Google Cloud', 'Cisco', 'Linux', 'Docker'] }
+              { title: 'Frontend', logos: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'HTML5', 'CSS', 'JavaScript'] },
+              { title: 'Backend', logos: ['Node.js', 'Laravel', 'PHP', 'Spring Boot', 'PostgreSQL', 'MySQL', 'Firebase'] },
+              { title: 'Tools', logos: ['Git', 'Postman', 'Vercel'] }
             ].map((category, i) => (
               <div key={i} style={{ background: 'rgba(255,255,255,0.03)', padding: '40px', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}>
                 <h4 style={{ color: '#38bdf8', marginBottom: '24px', fontSize: '1.25rem', fontWeight: 700 }}>{category.title}</h4>
@@ -145,25 +145,8 @@ function App() {
         </div>
       </section>
 
-      {/* 3. EDUCATION */}
-      <section id="education" style={getSectionStyle(2)}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
-          <SectionHeader title="Academic History" subtitle="Education" color="#0984e3" />
-          <div style={{ position: 'relative', paddingLeft: '32px', borderLeft: '2px solid #e2e8f0', maxWidth: '900px' }}>
-            <div style={{ position: 'absolute', left: '-9px', top: '0', width: '16px', height: '16px', borderRadius: '50%', background: '#0984e3', border: '4px solid #fff' }}></div>
-            <h3 style={{ fontSize: '1.6rem', fontWeight: 700, margin: 0 }}>Bachelor of Computer Science (Hons.) Netcentric Computing</h3>
-            <p style={{ color: '#0984e3', fontWeight: 600, margin: '8px 0' }}>Universiti Teknologi MARA (UiTM) | 2022 — 2025</p>
-            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginTop: '16px' }}>
-              {['Distributed Systems', 'Cloud Computing', 'Network Security', 'Web Engineering'].map(tag => (
-                <span key={tag} style={{ background: '#f1f5f9', color: '#475569', padding: '6px 14px', borderRadius: '100px', fontSize: '0.8rem', fontWeight: 600 }}>{tag}</span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 4. PROJECTS */}
-      <section id="projects" style={getSectionStyle(3)}>
+      {/* PROJECTS */}
+      <section id="projects" style={getSectionStyle(2)}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '10px' }}>
             <SectionHeader title="Featured Work" subtitle="Portfolio" color="#38bdf8" />
@@ -175,30 +158,77 @@ function App() {
         </div>
       </section>
 
-      {/* 5. EXPERIENCE */}
-      <section id="experience" style={getSectionStyle(4)}>
+      {/* EXPERIENCE */}
+      <section id="experience" style={getSectionStyle(3)}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
           <SectionHeader title="Career Path" subtitle="Experience" color="#0984e3" />
-          <div style={{ display: 'grid', gap: '24px', maxWidth: '900px' }}>
-            <div style={{ background: '#f8fafc', padding: '40px', borderRadius: '24px', border: '1px solid #e2e8f0' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px' }}>
+          
+          <div style={{ display: 'grid', gap: '24px', width: '100%' }}>
+            {/* Card 1 */}
+            <div style={{ 
+              background: '#f8fafc', 
+              padding: '40px', 
+              borderRadius: '24px', 
+              border: '1px solid #e2e8f0',
+              width: '100%', // Ensures it stretches
+              boxSizing: 'border-box'
+            }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', alignItems: 'center' }}>
                 <div>
-                  <h4 style={{ fontSize: '1.4rem', fontWeight: 700, margin: 0 }}>IT Support Intern</h4>
-                  <p style={{ color: '#0984e3', fontWeight: 600 }}>Jabatan Perkhidmatan Komputer Negeri (JPKN) Sabah</p>
+                  <h4 style={{ fontSize: '1.5rem', fontWeight: 700, margin: 0, color: '#1e293b' }}>IT Support Intern</h4>
+                  <p style={{ color: '#0984e3', fontWeight: 600, fontSize: '1.1rem', marginTop: '4px' }}>
+                    Jabatan Perkhidmatan Komputer Negeri (JPKN) Sabah
+                  </p>
                 </div>
-                <span style={{ background: '#e2e8f0', padding: '4px 12px', borderRadius: '6px', fontSize: '0.85rem', fontWeight: 700 }}>2025</span>
+                <span style={{ background: '#e2e8f0', color: '#475569', padding: '6px 16px', borderRadius: '8px', fontSize: '0.9rem', fontWeight: 700 }}>
+                  2025
+                </span>
               </div>
-              <p style={{ color: '#64748b', marginTop: '20px', lineHeight: 1.6 }}>Maintained critical government IT infrastructure and provided technical troubleshooting for hardware and software systems.</p>
+              <p style={{ color: '#64748b', marginTop: '20px', lineHeight: 1.8, fontSize: '1.05rem', maxWidth: '800px' }}>
+                Maintained critical government IT infrastructure and provided technical troubleshooting for hardware and software systems.
+              </p>
             </div>
-            <div style={{ background: '#f8fafc', padding: '40px', borderRadius: '24px', border: '1px solid #e2e8f0' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px' }}>
+
+            {/* Card 2 */}
+            <div style={{ 
+              background: '#f8fafc', 
+              padding: '40px', 
+              borderRadius: '24px', 
+              border: '1px solid #e2e8f0',
+              width: '100%', // Ensures it stretches
+              boxSizing: 'border-box'
+            }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', alignItems: 'center' }}>
                 <div>
-                  <h4 style={{ fontSize: '1.4rem', fontWeight: 700, margin: 0 }}>Program Director / Treasurer</h4>
-                  <p style={{ color: '#0984e3', fontWeight: 600 }}>NETCOM Club</p>
+                  <h4 style={{ fontSize: '1.5rem', fontWeight: 700, margin: 0, color: '#1e293b' }}>Program Director / Treasurer</h4>
+                  <p style={{ color: '#0984e3', fontWeight: 600, fontSize: '1.1rem', marginTop: '4px' }}>
+                    NETCOM Club
+                  </p>
                 </div>
-                <span style={{ background: '#e2e8f0', padding: '4px 12px', borderRadius: '6px', fontSize: '0.85rem', fontWeight: 700 }}>2024 — 2025</span>
+                <span style={{ background: '#e2e8f0', color: '#475569', padding: '6px 16px', borderRadius: '8px', fontSize: '0.9rem', fontWeight: 700 }}>
+                  2024 — 2025
+                </span>
               </div>
-              <p style={{ color: '#64748b', marginTop: '20px', lineHeight: 1.6 }}>Led Cybersecurity Awareness initiatives and managed financial budgeting for technical workshops.</p>
+              <p style={{ color: '#64748b', marginTop: '20px', lineHeight: 1.8, fontSize: '1.05rem', maxWidth: '800px' }}>
+                Led Cybersecurity Awareness initiatives and managed financial budgeting for technical workshops.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* EDUCATION */}
+      <section id="education" style={getSectionStyle(4)}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
+          <SectionHeader title="Academic History" subtitle="Education" color="#0984e3" />
+          <div style={{ position: 'relative', paddingLeft: '32px', borderLeft: '2px solid #e2e8f0', maxWidth: '900px' }}>
+            <div style={{ position: 'absolute', left: '-9px', top: '0', width: '16px', height: '16px', borderRadius: '50%', background: '#0984e3', border: '4px solid #fff' }}></div>
+            <h3 style={{ fontSize: '1.6rem', fontWeight: 700, margin: 0 }}>Bachelor of Computer Science (Hons.) Netcentric Computing</h3>
+            <p style={{ color: '#0984e3', fontWeight: 600, margin: '8px 0' }}>Universiti Teknologi MARA (UiTM) | 2022 — 2025</p>
+            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginTop: '16px' }}>
+              {['Distributed Systems', 'Cloud Computing', 'Network Security', 'Web Engineering'].map(tag => (
+                <span key={tag} style={{ background: '#f1f5f9', color: '#475569', padding: '6px 14px', borderRadius: '100px', fontSize: '0.8rem', fontWeight: 600 }}>{tag}</span>
+              ))}
             </div>
           </div>
         </div>
