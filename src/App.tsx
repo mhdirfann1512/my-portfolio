@@ -664,12 +664,103 @@ function App() {
         </div>
       </section>
 
-      <footer style={{ textAlign: 'center', padding: '80px 24px', backgroundColor: '#0f172a', color: '#94a3b8' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <p style={{ fontSize: '1rem', fontWeight: 600, color: '#f8fafc', marginBottom: '8px' }}>Let's build something amazing together.</p>
-          <p>© {new Date().getFullYear()} • Crafted with React & TypeScript</p>
-        </div>
-      </footer>
+<footer id="contact" style={{ 
+  textAlign: 'center', 
+  padding: '80px 24px', 
+  backgroundColor: '#0f172a', 
+  color: '#94a3b8',
+  borderTop: '1px solid rgba(255,255,255,0.05)' 
+}}>
+  <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+    
+    {/* Upper Section: Call to Action */}
+    <div style={{ marginBottom: '48px' }}>
+      <h2 style={{ fontSize: '1.8rem', fontWeight: 800, color: '#f8fafc', marginBottom: '16px' }}>
+        Let's build something <span style={{ color: '#0984e3' }}>Real</span> together.
+      </h2>
+      <p style={{ maxWidth: '500px', margin: '0 auto', lineHeight: '1.6', fontSize: '1.05rem' }}>
+        I'm currently seeking entry-level opportunities in a professional development environment.
+      </p>
+    </div>
+
+    {/* Middle Section: Socials & Contact */}
+    <div style={{ 
+      display: 'flex', 
+      justifyContent: 'center', 
+      gap: '32px', 
+      flexWrap: 'wrap',
+      marginBottom: '48px' 
+    }}>
+      {[
+        { label: 'LinkedIn', url: 'https://linkedin.com/in/your-username', icon: 'linkedin' },
+        { label: 'GitHub', url: `https://github.com/${GITHUB_USERNAME}`, icon: 'github' },
+        { label: 'Email', url: 'mailto:your.email@example.com', icon: 'gmail' }
+      ].map((link) => (
+        <a 
+          key={link.label}
+          href={link.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ 
+            color: '#f8fafc', 
+            textDecoration: 'none', 
+            fontWeight: 600, 
+            fontSize: '0.95rem',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            transition: 'all 0.3s ease',
+            padding: '8px 16px',
+            background: 'rgba(255,255,255,0.03)',
+            borderRadius: '10px',
+            border: '1px solid rgba(255,255,255,0.05)'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.color = '#0984e3';
+            e.currentTarget.style.background = 'rgba(9, 132, 227, 0.1)';
+            e.currentTarget.style.borderColor = 'rgba(9, 132, 227, 0.3)';
+            e.currentTarget.style.transform = 'translateY(-3px)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.color = '#f8fafc';
+            e.currentTarget.style.background = 'rgba(255,255,255,0.03)';
+            e.currentTarget.style.borderColor = 'rgba(255,255,255,0.05)';
+            e.currentTarget.style.transform = 'translateY(0)';
+          }}
+        >
+          <img 
+            src={`https://cdn.simpleicons.org/${link.icon}/f8fafc`} 
+            alt={link.label}
+            style={{ width: '18px', height: '18px' }}
+          />
+          {link.label}
+        </a>
+      ))}
+    </div>
+
+    {/* Bottom Section: Copyright & Tech */}
+    <div style={{ 
+      paddingTop: '32px', 
+      borderTop: '1px solid rgba(255,255,255,0.05)',
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      flexWrap: 'wrap',
+      gap: '20px',
+      fontSize: '0.9rem'
+    }}>
+      <p style={{ margin: 0 }}>
+        © {new Date().getFullYear()} • Irfan. All rights reserved.
+      </p>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <span style={{ opacity: 0.8 }}>Crafted with</span>
+        <span style={{ color: '#61dafb', fontWeight: 700 }}>React</span>
+        <span style={{ opacity: 0.5 }}>&</span>
+        <span style={{ color: '#3178c6', fontWeight: 700 }}>TypeScript</span>
+      </div>
+    </div>
+  </div>
+</footer>
     </div>
   );
 }
