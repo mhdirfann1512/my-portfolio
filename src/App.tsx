@@ -271,7 +271,7 @@ function App() {
             {[
               { title: 'Frontend', color: '#38bdf8', logos: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'HTML5', 'CSS', 'JavaScript'] },
               { title: 'Backend', color: '#60a5fa', logos: ['Node.js', 'Laravel', 'PHP', 'Express', 'Spring Boot', 'Java', 'PostgreSQL', 'MySQL', 'Firebase'] },
-              { title: 'Tools', color: '#818cf8', logos: ['Git', 'Postman', 'Vercel', 'AWS', 'Google Cloud'] }
+              { title: 'Tools', color: '#818cf8', logos: ['Git', 'Postman', 'Vercel', 'AWS', 'Google Cloud', 'Laragon'] }
             ].map((category, i) => (
               <div 
                 key={i} 
