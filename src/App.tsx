@@ -422,7 +422,7 @@ function App() {
                 // Kita buat dalam bentuk array [ ]
                 description: [
                   'Developed an interactive dashboard using Looker Studio by collaborating with department stakeholders to gather requirements.',
-                  'Designed visual layouts and integrated multiple data sources to ensure real-time accuracy for administrative decision-making.'
+                  'Implemented a digital display system using Raspberry Pi and PiSignage to showcase the dashboard across multiple locations within the department.'
                 ],
                 color: '#0984e3'
               }
