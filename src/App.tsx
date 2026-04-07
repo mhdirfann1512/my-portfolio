@@ -26,7 +26,7 @@ function App() {
   const GITHUB_USERNAME = "mhdirfann1512";
   const STATS = {
     projects: projects.length,
-    commits: "100+",
+    contribution: "100+",
     certs: "1"
   };
 
@@ -72,7 +72,7 @@ function App() {
             Irfan<span style={{color: '#64748b'}}>.</span>
           </b>
           <div style={{ display: 'flex', gap: '8px' }}>
-            {['Skills', 'Projects', 'Experience', 'Education'].map(item => (
+            {['Skills', 'Projects', 'Experience', 'Education', 'Contact'].map(item => (
               <button key={item} onClick={() => scrollToSection(item.toLowerCase())} 
                 style={{ background: 'none', border: 'none', fontWeight: 600, color: '#475569', cursor: 'pointer', fontSize: '0.85rem', padding: '8px 16px', borderRadius: '12px', transition: 'all 0.2s' }}
                 onMouseOver={(e) => { e.currentTarget.style.backgroundColor = '#f1f5f9'; e.currentTarget.style.color = '#0984e3'; }}
@@ -119,7 +119,7 @@ function App() {
           letterSpacing: '-0.03em', 
           marginTop: '10px' 
         }}>
-          Ready for the <span style={{ color: '#0984e3' }}>Real World</span>.
+          Ready to <span style={{ color: '#0984e3' }}>Contribute</span>.
         </h1>
 
         <p style={{ 
@@ -193,7 +193,7 @@ function App() {
       
       {/* STATISTICS BLOCK */}
       <div style={{ display: 'flex', gap: '48px', borderTop: '1px solid #f1f5f9', paddingTop: '32px' }}>
-        {[{ label: 'Projects', value: STATS.projects }, { label: 'Commits', value: STATS.commits }, { label: 'Certifications', value: STATS.certs }].map(stat => (
+        {[{ label: 'Projects', value: STATS.projects }, { label: 'contribution', value: STATS.contribution }, { label: 'Certifications', value: STATS.certs }].map(stat => (
           <div key={stat.label}>
             <div style={{ fontSize: '1.75rem', fontWeight: 800, color: '#1e293b' }}>{stat.value}</div>
             <div style={{ fontSize: '0.75rem', fontWeight: 600, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '1px' }}>{stat.label}</div>
@@ -686,124 +686,124 @@ function App() {
         </div>
       </section>
 
-<footer id="contact" style={{ 
-  textAlign: 'center', 
-  padding: '80px 24px', 
-  backgroundColor: '#0f172a', 
-  color: '#94a3b8',
-  borderTop: '1px solid rgba(255,255,255,0.05)' 
-}}>
-  <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-    
-    {/* Upper Section: Call to Action */}
-    <div style={{ marginBottom: '48px' }}>
-      <h2 style={{ fontSize: '1.8rem', fontWeight: 800, color: '#f8fafc', marginBottom: '16px' }}>
-        Let's build something <span style={{ color: '#0984e3' }}>Real</span> together.
-      </h2>
-      <p style={{ maxWidth: '500px', margin: '0 auto', lineHeight: '1.6', fontSize: '1.05rem' }}>
-        I'm currently seeking entry-level opportunities in a professional development environment.
-      </p>
-    </div>
+      <footer id="contact" style={{ 
+        textAlign: 'center', 
+        padding: '80px 24px', 
+        backgroundColor: '#0f172a', 
+        color: '#94a3b8',
+        borderTop: '1px solid rgba(255,255,255,0.05)' 
+      }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          
+          {/* Upper Section: Call to Action */}
+          <div style={{ marginBottom: '48px' }}>
+            <h2 style={{ fontSize: '1.8rem', fontWeight: 800, color: '#f8fafc', marginBottom: '16px' }}>
+              Let's <span style={{ color: '#0984e3' }}>Work</span> together.
+            </h2>
+            <p style={{ maxWidth: '500px', margin: '0 auto', lineHeight: '1.6', fontSize: '1.05rem' }}>
+              Seeking entry-level opportunities in a professional development environment.
+            </p>
+          </div>
 
-    {/* Middle Section: Socials & Contact */}
-    <div style={{ 
-      display: 'flex', 
-      justifyContent: 'center', 
-      gap: '32px', 
-      flexWrap: 'wrap',
-      marginBottom: '48px' 
-    }}>
-    {[
-      { 
-        label: 'LinkedIn', 
-        icon: 'https://img.icons8.com/ios-filled/50/f8fafc/linkedin.png',
-        url: 'https://www.linkedin.com/in/irfan-appri' 
-      },
-      { 
-        label: 'GitHub', 
-        icon: 'https://img.icons8.com/ios-filled/50/f8fafc/github.png',
-        url: `https://github.com/${GITHUB_USERNAME}` 
-      },
-        { 
-        label: 'Email', 
-        icon: 'https://img.icons8.com/ios-filled/50/f8fafc/gmail.png',
-        url: 'https://mail.google.com/mail/?view=cm&fs=1&to=muhammadirfanappri785@gmail.com' 
-      },
-      { 
-        label: 'WhatsApp', 
-        icon: 'https://img.icons8.com/ios-filled/50/f8fafc/whatsapp.png',
-        // Gantikan 60123456789 dengan no fon kau (mesti mula dengan 60)
-        url: 'https://wa.me/60125661512?text=Hi%20Irfan,%20I%20saw%20your%20portfolio...' 
-      }
+          {/* Middle Section: Socials & Contact */}
+          <div style={{ 
+            display: 'flex', 
+            justifyContent: 'center', 
+            gap: '32px', 
+            flexWrap: 'wrap',
+            marginBottom: '48px' 
+          }}>
+          {[
+            { 
+              label: 'LinkedIn', 
+              icon: 'https://img.icons8.com/ios-filled/50/f8fafc/linkedin.png',
+              url: 'https://www.linkedin.com/in/irfan-appri' 
+            },
+            { 
+              label: 'GitHub', 
+              icon: 'https://img.icons8.com/ios-filled/50/f8fafc/github.png',
+              url: `https://github.com/${GITHUB_USERNAME}` 
+            },
+              { 
+              label: 'Email', 
+              icon: 'https://img.icons8.com/ios-filled/50/f8fafc/gmail.png',
+              url: 'https://mail.google.com/mail/?view=cm&fs=1&to=muhammadirfanappri785@gmail.com' 
+            },
+            { 
+              label: 'WhatsApp', 
+              icon: 'https://img.icons8.com/ios-filled/50/f8fafc/whatsapp.png',
+              // Gantikan 60123456789 dengan no fon kau (mesti mula dengan 60)
+              url: 'https://wa.me/60125661512?text=Hi%20Irfan,%20I%20saw%20your%20portfolio...' 
+            }
 
-    ].map((link) => (
-      <a 
-        key={link.label}
-        href={link.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ 
-          color: '#f8fafc', 
-          textDecoration: 'none', 
-          fontWeight: 600, 
-          fontSize: '0.95rem',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '10px',
-          transition: 'all 0.3s ease',
-          padding: '10px 22px',
-          background: 'rgba(255,255,255,0.03)',
-          borderRadius: '12px',
-          border: '1px solid rgba(255,255,255,0.1)',
-        }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.color = '#0984e3';
-          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
-          e.currentTarget.style.borderColor = '#0984e3';
-          e.currentTarget.style.transform = 'translateY(-3px)';
-          const img = e.currentTarget.querySelector('img');
-          if(img) img.style.filter = 'invert(40%) sepia(90%) saturate(2000%) hue-rotate(190deg)';
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.color = '#f8fafc';
-          e.currentTarget.style.background = 'rgba(255,255,255,0.03)';
-          e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)';
-          e.currentTarget.style.transform = 'translateY(0)';
-          const img = e.currentTarget.querySelector('img');
-          if(img) img.style.filter = 'none';
-        }}
-      >
-        <img 
-          src={link.icon} 
-          alt={link.label}
-          style={{ 
-            width: '20px', 
-            height: '20px',
-            transition: 'all 0.3s ease'
-          }}
-        />
-        {link.label}
-      </a>
-    ))}
-    </div>
+          ].map((link) => (
+            <a 
+              key={link.label}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ 
+                color: '#f8fafc', 
+                textDecoration: 'none', 
+                fontWeight: 600, 
+                fontSize: '0.95rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '10px',
+                transition: 'all 0.3s ease',
+                padding: '10px 22px',
+                background: 'rgba(255,255,255,0.03)',
+                borderRadius: '12px',
+                border: '1px solid rgba(255,255,255,0.1)',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = '#0984e3';
+                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                e.currentTarget.style.borderColor = '#0984e3';
+                e.currentTarget.style.transform = 'translateY(-3px)';
+                const img = e.currentTarget.querySelector('img');
+                if(img) img.style.filter = 'invert(40%) sepia(90%) saturate(2000%) hue-rotate(190deg)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = '#f8fafc';
+                e.currentTarget.style.background = 'rgba(255,255,255,0.03)';
+                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)';
+                e.currentTarget.style.transform = 'translateY(0)';
+                const img = e.currentTarget.querySelector('img');
+                if(img) img.style.filter = 'none';
+              }}
+            >
+              <img 
+                src={link.icon} 
+                alt={link.label}
+                style={{ 
+                  width: '20px', 
+                  height: '20px',
+                  transition: 'all 0.3s ease'
+                }}
+              />
+              {link.label}
+            </a>
+          ))}
+          </div>
 
-    {/* Bottom Section: Copyright & Tech */}
-    <div style={{ 
-      paddingTop: '32px', 
-      borderTop: '1px solid rgba(255,255,255,0.05)',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      flexWrap: 'wrap',
-      gap: '20px',
-      fontSize: '0.9rem'
-    }}>
-      <p style={{ margin: 0 }}>
-        © {new Date().getFullYear()} • Irfan. All rights reserved.
-      </p>
-    </div>
-  </div>
-</footer>
+          {/* Bottom Section: Copyright & Tech */}
+          <div style={{ 
+            paddingTop: '32px', 
+            borderTop: '1px solid rgba(255,255,255,0.05)',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            gap: '20px',
+            fontSize: '0.9rem'
+          }}>
+            <p style={{ margin: 0 }}>
+              © {new Date().getFullYear()} • Irfan. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
