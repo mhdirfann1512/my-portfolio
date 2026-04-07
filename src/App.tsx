@@ -69,7 +69,7 @@ function App() {
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 24px' }}>
           <b style={{ color: '#0984e3', cursor: 'pointer', fontSize: '1.4rem', letterSpacing: '-1px', fontWeight: 800 }} onClick={() => window.scrollTo({top:0, behavior:'smooth'})}>
-            Irfan<span style={{color: '#64748b'}}>.dev</span>
+            Irfan<span style={{color: '#64748b'}}>.portfolio</span>
           </b>
           <div style={{ display: 'flex', gap: '8px' }}>
             {['Skills', 'Projects', 'Experience', 'Education'].map(item => (
