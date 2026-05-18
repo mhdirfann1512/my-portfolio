@@ -26,7 +26,7 @@ function App() {
   const GITHUB_USERNAME = "mhdirfann1512";
   const STATS = {
     projects: projects.length,
-    contribution: "100+",
+    contribution: "180+",
     certs: "1"
   };
 
