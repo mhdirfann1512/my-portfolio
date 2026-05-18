@@ -88,5 +88,24 @@ export const projects: Project[] = [
       "/project2/call.jpg",
       "/project2/feedback.jpg",
     ]
+  },
+  {
+    id: 5,
+    title: "MediMap Clinic Locator Android App",
+    description: "Location-based clinic discovery application with authentication.",
+    techHighlight: "Built a native Android application integrating Google Maps API and Firebase to deliver real-time geospatial navigation and seamless healthcare accessibility for local communities",
+    tags: ["Java", "Firebase", "Google Maps API", "Android SDK"],
+    githubLink: "https://github.com/mhdirfann1512/MediMap-Clinik-Locator-Mobile-App",
+    image: "/project2/welcome.jpg",
+    screenshots: [
+      "/project2/map.jpg",
+      "/project2/welcome.jpg",
+      "/project2/map.jpg",
+      "/project2/details.jpg",
+      "/project2/navigation.jpg",
+      "/project2/details.jpg",
+      "/project2/call.jpg",
+      "/project2/feedback.jpg",
+    ]
   }
 ];
