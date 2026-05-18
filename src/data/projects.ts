@@ -91,11 +91,11 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    title: "MediMap Clinic Locator Android App",
-    description: "Location-based clinic discovery application with authentication.",
-    techHighlight: "Built a native Android application integrating Google Maps API and Firebase to deliver real-time geospatial navigation and seamless healthcare accessibility for local communities",
-    tags: ["Java", "Firebase", "Google Maps API", "Android SDK"],
-    githubLink: "https://github.com/mhdirfann1512/MediMap-Clinik-Locator-Mobile-App",
+    title: "Online Exam System (MVP)",
+    description: "A modern web-based online examination management system that enables administrators to manage question banks, conduct exams, and generate automated results for students.",
+    techHighlight: "Built using Laravel 12 with MySQL, Tailwind CSS, Alpine.js, and Sanctum API to deliver a lightweight, scalable exam platform featuring real-time autosave, automated grading, and Excel/PDF reporting.",
+    tags: ["Laravel 12", "PHP 8.2", "MySQL", "Tailwind CSS", "Alpine.js", "Vite", "Sanctum", "Maatwebsite Excel", "DomPDF"],
+    githubLink: "https://github.com/mhdirfann1512/Online-Exam-System-MVP",
     image: "/project2/welcome.jpg",
     screenshots: [
       "/project2/map.jpg",
