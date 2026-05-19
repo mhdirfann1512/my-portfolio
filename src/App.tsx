@@ -394,8 +394,10 @@ function App() {
             gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', 
             gap: '24px' // Slightly tighter gap for a cleaner look
           }}>
-            {projects.map((item: Project) => (
-              <ProjectCard key={item.id} project={item} />
+            {[...projects]
+              .sort((a, b) => b.id - a.id)
+              .map((item: Project) => (
+                <ProjectCard key={item.id} project={item} />
             ))}
           </div>
         </div>
