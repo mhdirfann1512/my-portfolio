@@ -98,6 +98,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/mhdirfann1512/Online-Exam-System-MVP",
     image: "/project5/welcome.png",
     screenshots: [
+      "/project5/welcome.png",
       "/project5/login_mvp.png",
       "/project5/register_mvp.png",
       "/project5/admin_dashboard.png",
