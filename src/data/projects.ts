@@ -11,8 +11,52 @@ export interface Project {
 
 export const projects: Project[] = [
 
+
     {
-    id: 1,
+      id: 1,
+      title: "MediMap Clinic Locator Android App",
+      description: "Location-based clinic discovery application with authentication.",
+      techHighlight: "Built a native Android application integrating Google Maps API and Firebase to deliver real-time geospatial navigation and seamless healthcare accessibility for local communities",
+      tags: ["Java", "Firebase", "Google Maps API", "Android SDK"],
+      githubLink: "https://github.com/mhdirfann1512/MediMap-Clinik-Locator-Mobile-App",
+      image: "/project2/welcome.jpg",
+      screenshots: [
+        "/project2/map.jpg",
+        "/project2/welcome.jpg",
+        "/project2/map.jpg",
+        "/project2/details.jpg",
+        "/project2/navigation.jpg",
+        "/project2/details.jpg",
+        "/project2/call.jpg",
+        "/project2/feedback.jpg",
+      ]
+    },
+    {
+      id: 2,
+      title: "Laboratory Sample Management System",
+      description: "A web-based system for tracking clinical samples and automating notifications.",
+      techHighlight: "Engineered an AI-integrated(OpenAI) Node.js platform featuring a predictive expiry engine and automated cron-job notifications to ensure sample integrity and laboratory efficiency.",
+      tags: ["Node.js", "MySQL", "OpenAI API", "Express", "HTML", "CSS", "JavaScript"],
+      githubLink: "https://github.com/mhdirfann1512/Web-Based-Laboratory-Sample-Management-System-Final-Year-Project-",
+      image: "/project1/homepage.png",
+      screenshots: [
+        "/project1/homepage.png",
+        "/project1/userdashboard.png",
+        "/project1/registersample.png",
+        "/project1/managesample.png",
+        "/project1/managesample2.png",
+        "/project1/disposesample.png",
+        "/project1/profile.png",
+        "/project1/ranking.png",
+        "/project1/admindashboard.png",
+        "/project1/managesampletype.png",
+        "/project1/managesample2.png",
+        "/project1/managestaff.png",
+        "/project1/report.png",
+      ]
+    },
+    {
+    id: 3,
     title: "Personal Expenses Tracker",
     description: "Record management system with visual analytics dashboards.",
     techHighlight: "Developed a modern full-stack application using Laravel 12 and Alpine.js, featuring dynamic month-over-month financial trend analysis and an optimized asset pipeline via Vite 7.0.",
@@ -31,31 +75,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 2,
-    title: "Laboratory Sample Management System",
-    description: "A web-based system for tracking clinical samples and automating notifications.",
-    techHighlight: "Engineered an AI-integrated(OpenAI) Node.js platform featuring a predictive expiry engine and automated cron-job notifications to ensure sample integrity and laboratory efficiency.",
-    tags: ["Node.js", "MySQL", "OpenAI API", "Express", "HTML", "CSS", "JavaScript"],
-    githubLink: "https://github.com/mhdirfann1512/Web-Based-Laboratory-Sample-Management-System-Final-Year-Project-",
-    image: "/project1/homepage.png",
-    screenshots: [
-      "/project1/homepage.png",
-      "/project1/userdashboard.png",
-      "/project1/registersample.png",
-      "/project1/managesample.png",
-      "/project1/managesample2.png",
-      "/project1/disposesample.png",
-      "/project1/profile.png",
-      "/project1/ranking.png",
-      "/project1/admindashboard.png",
-      "/project1/managesampletype.png",
-      "/project1/managesample2.png",
-      "/project1/managestaff.png",
-      "/project1/report.png",
-    ]
-  },
-  {
-    id: 3,
+    id: 4,
     title: "Stock Management System",
     description: "Full-stack inventory tracking and product analytics system.",
     techHighlight: "Architected a high-performance Java Spring Boot and PostgreSQL backend with a reactive JavaScript dashboard to provide real-time inventory analytics and secure, role-based resource tracking.",
@@ -68,25 +88,6 @@ export const projects: Project[] = [
       "/project3/category.png",
       "/project3/alert.png",
       "/project3/settings.png",
-    ]
-  },
-  {
-     id: 4,
-    title: "MediMap Clinic Locator Android App",
-    description: "Location-based clinic discovery application with authentication.",
-    techHighlight: "Built a native Android application integrating Google Maps API and Firebase to deliver real-time geospatial navigation and seamless healthcare accessibility for local communities",
-    tags: ["Java", "Firebase", "Google Maps API", "Android SDK"],
-    githubLink: "https://github.com/mhdirfann1512/MediMap-Clinik-Locator-Mobile-App",
-    image: "/project2/welcome.jpg",
-    screenshots: [
-      "/project2/map.jpg",
-      "/project2/welcome.jpg",
-      "/project2/map.jpg",
-      "/project2/details.jpg",
-      "/project2/navigation.jpg",
-      "/project2/details.jpg",
-      "/project2/call.jpg",
-      "/project2/feedback.jpg",
     ]
   },
   {
